@@ -4,10 +4,11 @@ omg-code
 [OMG!Code](https://github.com/jamesharr/omg-code) is a repository for topics discussed on the [OMG](http://omahamakergroup.org) code night.
 
 
-git stuff
+GIT
 ========
-* http://www.codeschool.com/courses/try-git
-* http://www.sbf5.com/~cduan/technical/git/
+Git and github are our defacto tools for sharing. Learn how to use the tools here.
+* [Codeschool - try git](http://www.codeschool.com/courses/try-git)
+* [Git in depth](http://www.sbf5.com/~cduan/technical/git/)
 
 Node and Angular Together
 ========
