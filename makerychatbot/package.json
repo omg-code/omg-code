@@ -1,0 +1,10 @@
+{
+  "name": "makerychat",
+  "description": "Talk to people at the Omaha Maker Group.",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "irc": "0.3.x"
+  }
+}

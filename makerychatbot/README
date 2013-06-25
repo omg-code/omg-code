@@ -1,0 +1,3 @@
+To install in vagrant:
+
+npm install --no-bin-link
