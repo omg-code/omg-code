@@ -1,8 +1,9 @@
-omg-code
+OMG!Code
 ========
+[OMG!Code](https://code.omahamakergroup.org) is the source code guild of the [Omaha Maker Group](http://omahamakergroup.org). 
+Welcoming Makers of all skill levels across all computer programming languages.
 
-[OMG!Code](https://github.com/jamesharr/omg-code) is a repository for topics discussed on the [OMG](http://omahamakergroup.org) code night.
-
+We're also a user group incubator. Excited about your bleeding edge code-related hobby and looking for others to geek out with? Join us while you gain traction!
 
 GIT
 ========
