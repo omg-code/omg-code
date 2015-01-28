@@ -1,0 +1,32 @@
+{
+    init: function(elevators, floors) {
+        var elevator = elevators[0]; // Let's use the first elevator
+        elevator.on("idle", function() {
+            console.log("idle " + elevator.destinationQueue);
+              elevator.checkDestinationQueue();
+        });
+        elevator.on("floor_button_pressed", function(floorNum) {
+            elevator.destinationQueue = [floorNum];
+            elevator.checkDestinationQueue();
+            //elevator.goToFloor(floorNum);
+        });
+        floors.forEach(function(floor, floorNum) {      
+            floor.on("up_button_pressed", function() {
+                console.log("up " + floor.floorNum());
+                elevator.destinationQueue = [floor.floorNum()];
+                elevator.checkDestinationQueue();
+                //elevator.goToFloor(floor.floorNum);
+            })
+            floor.on("down_button_pressed", function() {
+                console.log("down " + floor.floorNum());
+                elevator.destinationQueue = [floor.floorNum()];
+                elevator.checkDestinationQueue();
+                //elevator.goToFloor(floor.floorNum);
+            })
+        });
+    },
+    update: function(dt, elevators, floors) {
+        // We normally don't need to do anything here
+    }
+}
+
