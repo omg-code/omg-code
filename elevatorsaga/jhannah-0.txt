@@ -15,7 +15,6 @@
             smartpush(floorNum);
             elevator.checkDestinationQueue();
             console.log("... dest queue is now " + elevator.destinationQueue);
-            //elevator.goToFloor(floorNum);
         });
         floors.forEach(function(floor, floorNum) {      
             floor.on("up_button_pressed", function() {
@@ -23,14 +22,12 @@
                 smartpush(floor.floorNum());
                 elevator.checkDestinationQueue();
                 console.log("... dest queue is now " + elevator.destinationQueue);
-                //elevator.goToFloor(floor.floorNum);
             })
             floor.on("down_button_pressed", function() {
                 console.log("down " + floor.floorNum());
                 smartpush(floor.floorNum());
                 elevator.checkDestinationQueue();
                 console.log("... dest queue is now " + elevator.destinationQueue);
-                //elevator.goToFloor(floor.floorNum);
             })
         });
         elevator.on("passing_floor", function(floorNum, direction) { 
